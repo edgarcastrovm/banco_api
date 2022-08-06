@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "d0c50357-77dc-4e8f-a9fc-92775dbf9515",
+		"name": "API  BANCA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21303891"
+	},
+	"item": [
+		{
+			"name": "ListarClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/clientes",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearCliente1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Jose Lema\",\n    \"genero\": \"m\",\n    \"edad\": 25,\n    \"identificacion\": \"123456789\",\n    \"direccion\": \"Otavalo sn y principal\",\n    \"telefono\": \"098254785\",\n    \"estado\": true,\n    \"contrasenia\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/clientes",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearCliente2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Marianela Montalvo\",\n    \"genero\": \"m\",\n    \"edad\": 25,\n    \"identificacion\": \"9876543212\",\n    \"direccion\": \"Amazonas y  NNUU\",\n    \"telefono\": \"097548965\",\n    \"estado\": true,\n    \"contrasenia\": \"5678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/clientes",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearCliente3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Juan Osorio\",\n    \"genero\": \"m\",\n    \"edad\": 25,\n    \"identificacion\": \"3456789012\",\n    \"direccion\": \"13 junio y Equinoccial\",\n    \"telefono\": \"098874587\",\n    \"estado\": true,\n    \"contrasenia\": \"1245\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/clientes",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarCuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/cuentas",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearCuentas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\"estado\": true,\"numeroCuenta\": \"478758\",\"typoCuenta\": \"Ahorro\",\"saldoInicial\": 2000.0,\"cliente\": {\"persona\":{\"identificacion\": \"123456789\"}}},\n    {\"estado\": true,\"numeroCuenta\": \"225487\",\"typoCuenta\": \"Corriente\",\"saldoInicial\": 100.0,\"cliente\":  {\"persona\":{\"identificacion\": \"9876543212\"}}},\n    {\"estado\": true,\"numeroCuenta\": \"495878\",\"typoCuenta\": \"Ahorro\",\"saldoInicial\": 0.0,\"cliente\":  {\"persona\":{\"identificacion\": \"3456789012\"}}},\n    {\"estado\": true,\"numeroCuenta\": \"496825\",\"typoCuenta\": \"Ahorro\",\"saldoInicial\": 540.0,\"cliente\": {\"persona\":{\"identificacion\": \"9876543212\"}}}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/cuentas",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearCuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\"estado\": true,\"numeroCuenta\": \"585545\",\"typoCuenta\": \"Corriente\",\"saldoInicial\": 1000.0,\"cliente\": {\"persona\":{\"identificacion\": \"123456789\"}}}\n\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/cuentas",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimientoDeposito1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": \"2022-08-03\",\n    \"tipoMovimiento\": \"Deposito\",\n    \"valor\": 600.0,\n    \"numeroCuenta\": \"225487\",\n    \"estado\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimientoDeposito2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": \"2022-08-03\",\n    \"tipoMovimiento\": \"Deposito\",\n    \"valor\": 150.0,\n    \"numeroCuenta\": \"495878\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimientoRetiro1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": \"2022-08-03\",\n    \"tipoMovimiento\": \"Retiro\",\n    \"valor\": -575.0,\n    \"numeroCuenta\": \"478758\",\n    \"estado\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMovimientoRetiro2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": \"2022-08-03\",\n    \"tipoMovimiento\": \"Retiro\",\n    \"valor\": -540.0,\n    \"numeroCuenta\": \"496825\",\n    \"estado\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarMovimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/movimientos",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarMovimientosPorCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/10",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"movimientos",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarMovimientosPorClienteFecha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/1/03-08-2022",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto}}",
+					"path": [
+						"api",
+						"movimientos",
+						"1",
+						"03-08-2022"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "servidor",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "puerto",
+			"value": "8080",
+			"type": "string"
+		}
+	]
+}

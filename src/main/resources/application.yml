@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/nttd_banco
+    username: nttdata
+    password: nttdata
+    maximum-pool-size: 50
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    generate-ddl: false
+    show-sql: false
+  http:
+    multipart:
+      max-file-size: 102400MB
+      max-request-size: 102400MB
+  output:
+    ansi:
+      enabled: DETECT
